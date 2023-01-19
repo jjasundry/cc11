@@ -29,3 +29,4 @@ https://www.dahuasecurity.com/newsEvents/pressRelease/351
 https://us.dahuasecurity.com/public-policy/faqs/fcc-rulemaking-process/  
 https://openplatform-public-or.s3-us-west-2.amazonaws.com/openplatform-public-or/source_1636336389292/Imou%20Cloud%20Security%20White%20Paper_V1.0903.pdf  
 https://open.imoulife.com/book/start.html
+https://foundation.mozilla.org/en/privacynotincluded/
