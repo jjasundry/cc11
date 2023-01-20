@@ -11,6 +11,8 @@ https://github.com/az0mb13/frida_setup
 https://arben.sh/bugbounty/Configuring-Frida-with-Burp-and-GenyMotion-to-bypass-SSL-Pinning/  
 https://blog.dixitaditya.com/one-click-ssl-pinning-bypass-setup  
 https://portswigger.net/burp  
+https://github.com/skylot/jadx  
+https://github.com/dwisiswant0/apkleaks  
 https://github.com/arainho/awesome-api-security  
 https://book.hacktricks.xyz/mobile-pentesting/android-app-pentesting  
 https://apisecurity.io/issue-194-api-testing-checklist-api-security-testing-resources-cvss-for-api-security/  
@@ -29,4 +31,7 @@ https://www.dahuasecurity.com/newsEvents/pressRelease/351
 https://us.dahuasecurity.com/public-policy/faqs/fcc-rulemaking-process/  
 https://openplatform-public-or.s3-us-west-2.amazonaws.com/openplatform-public-or/source_1636336389292/Imou%20Cloud%20Security%20White%20Paper_V1.0903.pdf  
 https://open.imoulife.com/book/start.html  
+https://owasp.org/www-project-mobile-top-10/  
+https://owasp.org/www-project-api-security/  
+https://fidoalliance.org/how-fido-works/  
 https://foundation.mozilla.org/en/privacynotincluded/  
