@@ -6,6 +6,7 @@ https://github.com/MobSF/Mobile-Security-Framework-MobSF
 https://mobsf.github.io/docs/#/  
 https://www.genymotion.com/  
 https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html  
+https://github.com/m9rco/Genymotion_ARM_Translation  
 https://frida.re/  
 https://github.com/az0mb13/frida_setup  
 https://arben.sh/bugbounty/Configuring-Frida-with-Burp-and-GenyMotion-to-bypass-SSL-Pinning/  
