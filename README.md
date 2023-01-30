@@ -1,7 +1,7 @@
-# cc11
-
-Links of interest:
-
+# cc11  
+  
+Links of interest:  
+  
 https://github.com/MobSF/Mobile-Security-Framework-MobSF  
 https://mobsf.github.io/docs/#/  
 https://www.genymotion.com/  
@@ -36,3 +36,56 @@ https://owasp.org/www-project-mobile-top-10/
 https://owasp.org/www-project-api-security/  
 https://fidoalliance.org/how-fido-works/  
 https://foundation.mozilla.org/en/privacynotincluded/  
+  
+  
+Lab info:  
+  
+Ubuntu 20.04  NOT 22  
+MobSF: Mobile Security testing platform  
+Genymotion: Virtual Devices  
+VirtualBox: Improved VM experience  
+JADX: Decompile APK, helps find creds  
+APKLeaks: Scanning APK for URIs, endpoints & secrets  
+Frida: Capture network traffic  
+Burp Suite  
+Postman  
+  
+Genymotion and Google services: Some Android apps require Google services. If the app is complaining about no Google services, use the Open GAPPS feature in Genymotion to fix that error.  
+![GAPPS](gapps.png)  
+  
+MobSF: install git, Python 3.8, JDK 8   https://mobsf.github.io/docs/#/requirements  
+git clone https://github.com/MobSF/Mobile-Security-Framework-MobSF.git  
+cd Mobile-Security-Framework-MobSF    and   ./setup.sh  
+  
+To run MobSF: ~/Mobile-Security-Framework-MobSF/./run.sh 127.0.0.1:8000  then visit 127.0.0.1:8000 in a browser.  
+  
+Frida: pip install Frida   and   pip install frida-tools  
+  
+Set up a better Frida script in MobSF:  
+sudo git clone https://github.com/az0mb13/frida_setup  
+Make a backup of the original MobSF frida script at  
+~/Mobile-Security-Framework-MobSF/mobsf/DynamicAnalyzer/tools/frida_scripts/default/ssl_pinning_bypass.js  
+Rename frida3.js to ssl_pinning_bypass.js and move to the above directory.  
+  
+Install JADX:  
+sudo git clone https://github.com/skylot/jadx.git /usr/local/jadx   
+then   ./gradlew dist  
+  
+To run JADX: /usr/local/jadx/build/jadx/bin/sudo ./jadx-gui  
+  
+Install apkleaks: pip3 install apkleaks  
+  
+To run apkleaks: sudo apkleaks -f [path to apk] -o [path to output file]  
+  
+Running Burp Suite in the Android Lab:  
+Define a network bridge in Genymotion VM and make note of IP address and port.  
+
+Run Frida manually:  
+adb root  
+adb connect 192.168.x.x:5555  
+adb push frida-server /data/local/tmp/  
+adb shell "chmod 755 /data/local/tmp/frida-server"  
+adb shell "/data/local/tmp/frida-server &"  
+frida -U -f [path to APK file] -l ~/frida_setup-master/frida3.js  
+https://arben.sh/bugbounty/Configuring-Frida-with-Burp-and-GenyMotion-to-bypass-SSL-Pinning/  
+  
