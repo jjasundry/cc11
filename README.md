@@ -36,6 +36,7 @@ https://owasp.org/www-project-mobile-top-10/
 https://owasp.org/www-project-api-security/  
 https://fidoalliance.org/how-fido-works/  
 https://foundation.mozilla.org/en/privacynotincluded/  
+https://helpcenter.netatmo.com/hc/en-us/articles/11622005619090-Smart-Outdoor-Camera-with-and-without-Siren  
   
   
 ## Lab info:  
